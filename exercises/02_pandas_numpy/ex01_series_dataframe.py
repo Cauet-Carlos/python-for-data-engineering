@@ -16,7 +16,7 @@ dados = {
     ],
 
     "cidade": [
-        "Manaus",
+        "Manaus", 
         "Manaus",
         "Belém",
         "Boa Vista",

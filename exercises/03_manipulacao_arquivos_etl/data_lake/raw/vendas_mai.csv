@@ -1,0 +1,7 @@
+venda_id,cliente_id,produto_id,quantidade,valor_unitario,data_venda,forma_pagamento
+1,1005,3,1,850.0,2026-05-10,Cartão
+2,1001,1,2,90.0,2026-05-14,Pix
+3,1003,5,1,1150.0,2026-05-19,Boleto
+4,1002,2,4,450.0,2026-05-22,Pix
+5,1004,4,1,120.0,2026-05-25,Cartão
+6,1005,1,2,3200.0,2026-05-28,Transferência

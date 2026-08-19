@@ -1,0 +1,6 @@
+cliente_id,nome,email,cidade,uf,data_cadastro,status
+1001,Carlos Silva,carlos@email.com,Manaus,AM,2025-01-10,Ativo
+1002,Ana Souza,ana@email.com,Belém,PA,2025-02-15,Ativo
+1003,Pedro Santos,,Manaus,AM,2025-03-01,Inativo
+1004,Maria Costa,maria@email.com,Boa Vista,RR,2025-04-20,Ativo
+1005,Lucas Lima,lucas@email.com,Manaus,AM,2025-05-12,Ativo

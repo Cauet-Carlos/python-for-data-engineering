@@ -1,0 +1,9 @@
+Inventário gerado em: 2026-08-19 14:41:51
+Total de arquivos encontrados: 6
+
+- vendas_abril.csv (0.6 KB)
+- vendas_favereiro.csv (0.5 KB)
+- vendas_janeiro.csv (0.4 KB)
+- vendas_junho.csv (0.5 KB)
+- vendas_maio.csv (0.5 KB)
+- vendas_marco.csv (0.5 KB)

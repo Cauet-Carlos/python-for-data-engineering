@@ -1,0 +1,169 @@
+2026-08-19 14:15:05,959 | INFO | Iniciando pipeline de vendas
+2026-08-19 14:15:05,962 | INFO | 6 arquivos localizados em raw
+2026-08-19 14:15:05,970 | INFO | Inventário da camada raw gerado em logs/inventario_raw.txt
+2026-08-19 14:15:06,223 | INFO | Carregado: vendas_abril.csv | linhas=11 | colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:15:06,225 | INFO | Carregado: vendas_favereiro.csv | linhas=12 | colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:15:06,227 | INFO | Carregado: vendas_janeiro.csv | linhas=14 | colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:15:06,228 | INFO | Carregado: vendas_junho.csv | linhas=11 | colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:15:06,230 | INFO | Carregado: vendas_maio.csv | linhas=11 | colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:15:06,231 | INFO | Carregado: vendas_marco.csv | linhas=12 | colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:15:06,233 | INFO | 6 arquivos válidos | 0 rejeitados
+2026-08-19 14:15:06,237 | INFO | Consolidação concluída: 71 registros
+2026-08-19 14:15:06,289 | INFO | Limpeza concluída: 0 nulos removidos | 0 negativos/zerados removidos | 0 duplicados removidos
+2026-08-19 14:15:06,296 | INFO | Coluna valor_total calculada | 71 registros finais
+2026-08-19 14:15:06,318 | INFO | Camada trusted salva em: c:\Users\Cauet Carlos\Documents\Date Engenier\python-for-data-engineering\desafios\03_pipeline_etl_avançado\data_lake\trusted\vendas_consolidadas.csv
+2026-08-19 14:15:06,319 | INFO | Pipeline finalizada com sucesso
+2026-08-19 14:18:59,048 | INFO | Iniciando pipeline de vendas
+2026-08-19 14:18:59,049 | INFO | ============================================================
+2026-08-19 14:18:59,050 | INFO | EXTRACT - LOCALIZAÇÃO DE ARQUIVOS
+2026-08-19 14:18:59,050 | INFO | ============================================================
+2026-08-19 14:18:59,051 | INFO | Arquivos encontrados: 6
+2026-08-19 14:18:59,052 | INFO |   - vendas_abril.csv
+2026-08-19 14:18:59,052 | INFO |   - vendas_favereiro.csv
+2026-08-19 14:18:59,053 | INFO |   - vendas_janeiro.csv
+2026-08-19 14:18:59,054 | INFO |   - vendas_junho.csv
+2026-08-19 14:18:59,055 | INFO |   - vendas_maio.csv
+2026-08-19 14:18:59,055 | INFO |   - vendas_marco.csv
+2026-08-19 14:18:59,060 | INFO | Inventário salvo em logs/inventario_raw.txt
+2026-08-19 14:18:59,060 | INFO | ============================================================
+2026-08-19 14:18:59,061 | INFO | EXTRACT - CARREGAMENTO DE ARQUIVOS
+2026-08-19 14:18:59,061 | INFO | ============================================================
+2026-08-19 14:18:59,101 | INFO |   vendas_abril.csv          linhas=11     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:18:59,102 | INFO |   vendas_favereiro.csv      linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:18:59,104 | INFO |   vendas_janeiro.csv        linhas=14     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:18:59,107 | INFO |   vendas_junho.csv          linhas=11     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:18:59,109 | INFO |   vendas_maio.csv           linhas=11     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:18:59,110 | INFO |   vendas_marco.csv          linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:18:59,111 | INFO | ============================================================
+2026-08-19 14:18:59,112 | INFO | VALIDATION - ESTRUTURA DOS ARQUIVOS
+2026-08-19 14:18:59,112 | INFO | ============================================================
+2026-08-19 14:18:59,114 | INFO | Válidos: 6  |  Rejeitados: 0
+2026-08-19 14:18:59,115 | INFO | ============================================================
+2026-08-19 14:18:59,115 | INFO | TRANSFORM - CONSOLIDAÇÃO E LIMPEZA
+2026-08-19 14:18:59,116 | INFO | ============================================================
+2026-08-19 14:18:59,119 | INFO | Registros consolidados (antes da limpeza): 71
+2026-08-19 14:18:59,135 | INFO |   Nulos removidos:              0
+2026-08-19 14:18:59,136 | INFO |   Negativos/zerados removidos:  0
+2026-08-19 14:18:59,137 | INFO |   Duplicados removidos:         0
+2026-08-19 14:18:59,138 | INFO |   Total removido:               0
+2026-08-19 14:18:59,141 | INFO | Coluna valor_total calculada
+2026-08-19 14:18:59,142 | INFO | ============================================================
+2026-08-19 14:18:59,142 | INFO | LOAD - CAMADA TRUSTED
+2026-08-19 14:18:59,143 | INFO | ============================================================
+2026-08-19 14:18:59,153 | INFO | Arquivo salvo em: c:\Users\Cauet Carlos\Documents\Date Engenier\python-for-data-engineering\desafios\03_pipeline_etl_avançado\data_lake\trusted\vendas_consolidadas.csv
+2026-08-19 14:18:59,157 | INFO | ============================================================
+2026-08-19 14:18:59,159 | INFO | RESUMO DA EXECUÇÃO
+2026-08-19 14:18:59,159 | INFO | ============================================================
+2026-08-19 14:18:59,160 | INFO | Arquivos processados:     6
+2026-08-19 14:18:59,161 | INFO | Arquivos válidos:         6
+2026-08-19 14:18:59,161 | INFO | Arquivos rejeitados:      0
+2026-08-19 14:18:59,162 | INFO | Registros brutos:         71
+2026-08-19 14:18:59,162 | INFO | Registros finais:         71
+2026-08-19 14:18:59,165 | INFO | Valor total em vendas:    R$ 94,150.00
+2026-08-19 14:18:59,166 | INFO | Tempo de execução:        0.11s
+2026-08-19 14:18:59,166 | INFO | Pipeline finalizada com sucesso
+2026-08-19 14:26:57,343 | INFO | Iniciando pipeline de vendas
+2026-08-19 14:26:57,344 | INFO | ============================================================
+2026-08-19 14:26:57,345 | INFO | EXTRACT - LOCALIZAÇÃO DE ARQUIVOS
+2026-08-19 14:26:57,345 | INFO | ============================================================
+2026-08-19 14:26:57,346 | INFO | Arquivos encontrados: 6
+2026-08-19 14:26:57,347 | INFO |   - vendas_abril.csv
+2026-08-19 14:26:57,348 | INFO |   - vendas_favereiro.csv
+2026-08-19 14:26:57,348 | INFO |   - vendas_janeiro.csv
+2026-08-19 14:26:57,349 | INFO |   - vendas_junho.csv
+2026-08-19 14:26:57,350 | INFO |   - vendas_maio.csv
+2026-08-19 14:26:57,351 | INFO |   - vendas_marco.csv
+2026-08-19 14:26:57,356 | INFO | Inventário salvo em logs/inventario_raw.txt
+2026-08-19 14:26:57,356 | INFO | ============================================================
+2026-08-19 14:26:57,357 | INFO | EXTRACT - CARREGAMENTO DE ARQUIVOS
+2026-08-19 14:26:57,357 | INFO | ============================================================
+2026-08-19 14:26:57,400 | INFO |   vendas_abril.csv          linhas=11     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:26:57,401 | INFO |   vendas_favereiro.csv      linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:26:57,401 | INFO |   vendas_janeiro.csv        linhas=14     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:26:57,402 | INFO |   vendas_junho.csv          linhas=11     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:26:57,402 | INFO |   vendas_maio.csv           linhas=11     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:26:57,403 | INFO |   vendas_marco.csv          linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:26:57,403 | INFO | ============================================================
+2026-08-19 14:26:57,403 | INFO | VALIDATION - ESTRUTURA DOS ARQUIVOS
+2026-08-19 14:26:57,404 | INFO | ============================================================
+2026-08-19 14:26:57,405 | INFO | Válidos: 6  |  Rejeitados: 0
+2026-08-19 14:26:57,406 | INFO | ============================================================
+2026-08-19 14:26:57,406 | INFO | TRANSFORM - CONSOLIDAÇÃO E LIMPEZA
+2026-08-19 14:26:57,407 | INFO | ============================================================
+2026-08-19 14:26:57,410 | INFO | Registros consolidados (antes da limpeza): 71
+2026-08-19 14:26:57,425 | INFO |   Nulos removidos:              0
+2026-08-19 14:26:57,426 | INFO |   Negativos/zerados removidos:  0
+2026-08-19 14:26:57,427 | INFO |   Duplicados removidos:         0
+2026-08-19 14:26:57,428 | INFO |   Total removido:               0
+2026-08-19 14:26:57,430 | INFO | Coluna valor_total calculada
+2026-08-19 14:26:57,431 | INFO | ============================================================
+2026-08-19 14:26:57,431 | INFO | LOAD - CAMADA TRUSTED
+2026-08-19 14:26:57,432 | INFO | ============================================================
+2026-08-19 14:26:57,442 | INFO | Arquivo salvo em: c:\Users\Cauet Carlos\Documents\Date Engenier\python-for-data-engineering\desafios\03_pipeline_etl_avançado\data_lake\trusted\vendas_consolidadas.csv
+2026-08-19 14:26:57,443 | INFO | ============================================================
+2026-08-19 14:26:57,446 | INFO | RESUMO DA EXECUÇÃO
+2026-08-19 14:26:57,447 | INFO | ============================================================
+2026-08-19 14:26:57,448 | INFO | Arquivos processados:     6
+2026-08-19 14:26:57,449 | INFO | Arquivos válidos:         6
+2026-08-19 14:26:57,450 | INFO | Arquivos rejeitados:      0
+2026-08-19 14:26:57,451 | INFO | Registros brutos:         71
+2026-08-19 14:26:57,452 | INFO | Registros finais:         71
+2026-08-19 14:26:57,453 | INFO | Valor total em vendas:    R$ 94,150.00
+2026-08-19 14:26:57,454 | INFO | Tempo de execução:        0.10s
+2026-08-19 14:26:57,455 | INFO | Pipeline finalizada com sucesso
+2026-08-19 14:41:51,815 | INFO | Iniciando pipeline de vendas
+2026-08-19 14:41:51,816 | INFO | ============================================================
+2026-08-19 14:41:51,817 | INFO | EXTRACT - LOCALIZAÇÃO DE ARQUIVOS
+2026-08-19 14:41:51,818 | INFO | ============================================================
+2026-08-19 14:41:51,819 | INFO | Arquivos encontrados: 6
+2026-08-19 14:41:51,820 | INFO |   - vendas_abril.csv
+2026-08-19 14:41:51,821 | INFO |   - vendas_favereiro.csv
+2026-08-19 14:41:51,822 | INFO |   - vendas_janeiro.csv
+2026-08-19 14:41:51,822 | INFO |   - vendas_junho.csv
+2026-08-19 14:41:51,823 | INFO |   - vendas_maio.csv
+2026-08-19 14:41:51,824 | INFO |   - vendas_marco.csv
+2026-08-19 14:41:51,830 | INFO | Inventário salvo em logs/inventario_raw.txt
+2026-08-19 14:41:51,831 | INFO | ============================================================
+2026-08-19 14:41:51,831 | INFO | EXTRACT - CARREGAMENTO DE ARQUIVOS
+2026-08-19 14:41:51,832 | INFO | ============================================================
+2026-08-19 14:41:52,049 | INFO |   vendas_abril.csv          linhas=13     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'status_entrega', 'arquivo_origem']
+2026-08-19 14:41:52,051 | INFO |   vendas_favereiro.csv      linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:41:52,052 | INFO |   vendas_janeiro.csv        linhas=15     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'data_venda', 'arquivo_origem']
+2026-08-19 14:41:52,053 | INFO |   vendas_junho.csv          linhas=13     colunas=['venda_id', 'cliente_id', 'produto_id', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:41:52,053 | INFO |   vendas_maio.csv           linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:41:52,054 | INFO |   vendas_marco.csv          linhas=12     colunas=['venda_id', 'cliente_id', 'produto_id', 'quantidade', 'valor_unitario', 'data_venda', 'arquivo_origem']
+2026-08-19 14:41:52,054 | INFO | ============================================================
+2026-08-19 14:41:52,055 | INFO | VALIDATION - ESTRUTURA DOS ARQUIVOS
+2026-08-19 14:41:52,055 | INFO | ============================================================
+2026-08-19 14:41:52,056 | WARNING | Arquivo rejeitado: vendas_abril.csv | faltantes=[] | extras=['status_entrega']
+2026-08-19 14:41:52,057 | WARNING | Arquivo rejeitado: vendas_janeiro.csv | faltantes=['valor_unitario'] | extras=[]
+2026-08-19 14:41:52,058 | WARNING | Arquivo rejeitado: vendas_junho.csv | faltantes=['quantidade'] | extras=[]
+2026-08-19 14:41:52,059 | INFO | Válidos: 3  |  Rejeitados: 3
+2026-08-19 14:41:52,059 | INFO | Detalhamento dos rejeitados:
+2026-08-19 14:41:52,060 | INFO |   - vendas_abril.csv: Schema inválido (faltantes=[], extras=['status_entrega'])
+2026-08-19 14:41:52,061 | INFO |   - vendas_janeiro.csv: Schema inválido (faltantes=['valor_unitario'], extras=[])
+2026-08-19 14:41:52,061 | INFO |   - vendas_junho.csv: Schema inválido (faltantes=['quantidade'], extras=[])
+2026-08-19 14:41:52,062 | INFO | ============================================================
+2026-08-19 14:41:52,064 | INFO | TRANSFORM - CONSOLIDAÇÃO E LIMPEZA
+2026-08-19 14:41:52,065 | INFO | ============================================================
+2026-08-19 14:41:52,071 | INFO | Registros consolidados (antes da limpeza): 36
+2026-08-19 14:41:52,110 | INFO |   Nulos removidos:              3
+2026-08-19 14:41:52,110 | INFO |   Negativos/zerados removidos:  3
+2026-08-19 14:41:52,111 | INFO |   Duplicados removidos:         3
+2026-08-19 14:41:52,112 | INFO |   Total removido:               9
+2026-08-19 14:41:52,116 | INFO | Coluna valor_total calculada
+2026-08-19 14:41:52,117 | INFO | ============================================================
+2026-08-19 14:41:52,117 | INFO | LOAD - CAMADA TRUSTED
+2026-08-19 14:41:52,117 | INFO | ============================================================
+2026-08-19 14:41:52,187 | INFO | Arquivo salvo em: c:\Users\Cauet Carlos\Documents\Date Engenier\python-for-data-engineering\desafios\03_pipeline_etl_avançado\data_lake\trusted\vendas_consolidadas.csv
+2026-08-19 14:41:52,188 | INFO | ============================================================
+2026-08-19 14:41:52,226 | INFO | RESUMO DA EXECUÇÃO
+2026-08-19 14:41:52,236 | INFO | ============================================================
+2026-08-19 14:41:52,271 | INFO | Arquivos processados:     6
+2026-08-19 14:41:52,273 | INFO | Arquivos válidos:         3
+2026-08-19 14:41:52,278 | INFO | Arquivos rejeitados:      3
+2026-08-19 14:41:52,279 | INFO | Registros brutos:         36
+2026-08-19 14:41:52,282 | INFO | Registros finais:         27
+2026-08-19 14:41:52,287 | INFO | Valor total em vendas:    R$ 30,900.00
+2026-08-19 14:41:52,288 | INFO | Tempo de execução:        0.37s
+2026-08-19 14:41:52,289 | INFO | Pipeline finalizada com sucesso

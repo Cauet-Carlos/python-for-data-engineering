@@ -1,0 +1,14 @@
+==========================================
+INVENTÁRIO DATA LAKE - RAW
+==========================================
+
+Arquivo: clientes        | Extensão: .csv  | Tamanho:  347 bytes
+Arquivo: fornecedores    | Extensão: .csv  | Tamanho:  247 bytes
+Arquivo: produtos        | Extensão: .csv  | Tamanho:  247 bytes
+Arquivo: vendas_fev      | Extensão: .csv  | Tamanho:  215 bytes
+Arquivo: vendas_jan      | Extensão: .csv  | Tamanho:  247 bytes
+------------------------------------------
+Total de arquivos: 5
+
+Quantidade por extensão
+.csv : 5
